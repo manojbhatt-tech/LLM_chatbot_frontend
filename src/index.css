@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Chat App Dark Theme */
+    --background: 217 33% 17%;
+    --foreground: 213 31% 91%;
+
+    --card: 217 33% 19%;
+    --card-foreground: 213 31% 91%;
+
+    --popover: 217 33% 19%;
+    --popover-foreground: 213 31% 91%;
+
+    --primary: 262 83% 58%;
+    --primary-foreground: 210 20% 98%;
+
+    --secondary: 217 33% 23%;
+    --secondary-foreground: 213 31% 91%;
+
+    --muted: 217 33% 21%;
+    --muted-foreground: 215 20% 65%;
+
+    --accent: 262 83% 58%;
+    --accent-foreground: 210 20% 98%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 20% 98%;
+
+    --border: 217 33% 25%;
+    --input: 217 33% 25%;
+    --ring: 262 83% 58%;
+
+    --radius: 0.5rem;
+
+    /* Chat App Specific Colors */
+    --sidebar-bg: 217 33% 15%;
+    --message-user: 262 83% 58%;
+    --message-assistant: 217 33% 21%;
+    --chat-input: 217 33% 19%;
+    
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(262, 83%, 58%), hsl(262, 83%, 68%));
+    --gradient-card: linear-gradient(145deg, hsl(217, 33%, 19%), hsl(217, 33%, 22%));
+    --gradient-hover: linear-gradient(145deg, hsl(217, 33%, 21%), hsl(217, 33%, 24%));
+    
+    /* Shadows */
+    --shadow-glow: 0 0 30px hsl(262, 83%, 58%, 0.3);
+    --shadow-card: 0 4px 20px hsl(217, 33%, 10%, 0.4);
+
+    /* Sidebar colors for compatibility */
+    --sidebar-background: 217 33% 15%;
+    --sidebar-foreground: 213 31% 91%;
+    --sidebar-primary: 262 83% 58%;
+    --sidebar-primary-foreground: 210 20% 98%;
+    --sidebar-accent: 217 33% 23%;
+    --sidebar-accent-foreground: 213 31% 91%;
+    --sidebar-border: 217 33% 25%;
+    --sidebar-ring: 262 83% 58%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
